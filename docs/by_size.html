@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="https://cdn.jsdelivr.net/gh/girobusan/simple-masonry-layout/js/masonry.js"></script>
+  <script defer>
+     window.masonry.init( {
+        container: "#columns",
+        bySize: true,
+        countFn: (e)=>{ 
+            return Math.floor( e.getBoundingClientRect().width/200 ) || 1 ;
+            }
+    } )
+    
+  </script>
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/gh/girobusan/simple-masonry-layout/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Masonry layout for static pages</h1>
+  <div id="menu">
+    <a href="index.html">Simple and fast algorithm</a> | 
+    <a href="by_size.html">Slower and nicer one</a>
+  </div>
+  <div id="columns">
+    <div class="item short">Lorem Ipsum 1</div>
+    <div class="item short">Lorem Ipsum 2</div>
+    <div class="item">Lorem Ipsum 3</div>
+    <div class="item">Lorem Ipsum 4</div>
+    <div class="item short">Lorem Ipsum 5</div>
+    <div class="item">Lorem Ipsum 6</div>
+    <div class="item">Lorem Ipsum 7</div>
+    <div class="item">Lorem Ipsum 8</div>
+    <div class="item long">Lorem Ipsum 9 <small>note!</small></div>
+    <div class="item">Lorem Ipsum 10</div>
+    <div class="item">Lorem Ipsum 11</div>
+    <div class="item short">Lorem Ipsum 12</div>
+    <div class="item">Lorem Ipsum 13</div>
+    <div class="item long">Lorem Ipsum 14</div>
+    <div class="item long">Lorem Ipsum 15</div>
+    <div class="item">Lorem Ipsum 16</div>
+    <div class="item">Lorem Ipsum 17</div>
+    <div class="item">Lorem Ipsum 18</div>
+    <div class="item">Lorem Ipsum 19</div>
+    <div class="item long">Lorem Ipsum 20</div>
+    <div class="item">Lorem Ipsum 21</div>
+    <div class="item">Lorem Ipsum 22</div>
+    <div class="item">Lorem Ipsum 23</div>
+    <div class="item">Lorem Ipsum 24</div>
+    <div class="item long">Lorem Ipsum 25</div>
+    <div class="item short">Lorem Ipsum 26</div>
+  </div>
+</body>
+</html>
